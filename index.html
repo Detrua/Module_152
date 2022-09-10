@@ -7,10 +7,13 @@
     <meta name="author" content="Eric Lehner, Demetrio Iaria, Sven Seiler">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Bergwerkkraft</title>
+
+    <script src="./js/jquery.js"></script>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/headers.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -84,6 +87,7 @@
     </div>
 </header>
 <div class="container">
+    <!-- Button trigger modal -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -94,21 +98,30 @@
             <div class="carousel-item active">
                 <div class="container">
                     <div class="carousel-caption">
-
+                        <img class="d-block w-100" src="./images/img.png" alt="second slide">
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="container">
                     <div class="carousel-caption text-end">
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <img class="d-block w-100" src="./images/picture.jpg" alt="second slide">
+                        <button type="button" class="cssbuttons-io" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                                </svg>
+                                Gallery
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="container">
                     <div class="carousel-caption">
-
+                        <img class="d-block w-100" src="./images/img.png" alt="third slide">
                     </div>
                 </div>
             </div>
@@ -121,6 +134,23 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -140,7 +170,6 @@
 </div>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
-<script src="./js/lightbox.js"></script>
 
 </body>
 </html>
