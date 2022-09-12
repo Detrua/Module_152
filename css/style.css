@@ -112,3 +112,8 @@
 .cssbuttons-io:active {
     transform: scale(0.95);
 }
+
+a > img {
+    height: auto;
+    width: 100%;
+}

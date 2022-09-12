@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--Lightbox-->
+<!--Created by Lokesh Dhakar-->
+<!--https://lokeshdhakar.com/projects/lightbox2-->
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -11,6 +14,7 @@
     <script src="./js/jquery.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <link href="css/headers.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -137,14 +141,37 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Gallery</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4 mb-3">
+                                <a href="images/picture.jpg" data-lightbox="image-set">
+                                    <img src="./images/picture.jpg" alt="second slide">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <a href="images/img.png" data-lightbox="image-set">
+                                    <img src="./images/img.png" alt="second slide">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <a href="images/img.png" data-lightbox="image-set">
+                                    <img src="./images/img.png" alt="second slide">
+                                </a>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <a href="images/img.png" data-lightbox="image-set">
+                                    <img src="./images/img.png" alt="second slide">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -170,6 +197,17 @@
 </div>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/lightbox.js"></script>
+
+<script>
+    lightbox.option({
+        'fitImagesInViewport': true
+    })
+
+    const exampleModal = new bootstrap.Modal('#exampleModal', {
+        keyboard: false
+    })
+</script>
 
 </body>
 </html>
