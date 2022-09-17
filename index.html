@@ -19,7 +19,6 @@
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/responsiveslides.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -62,7 +61,7 @@
                 </a>
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                     <li>
-                        <a href="#" class="nav-link text-secondary">
+                        <a href="#personal_cards" class="nav-link text-secondary">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                 <use xlink:href="#home"/>
                             </svg>
@@ -70,7 +69,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a href="#personal_cards" class="nav-link text-white">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                 <use xlink:href="#installation"/>
                             </svg>
@@ -78,7 +77,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link text-white">
+                        <a data-scroll href="#personal_cards" class="nav-link text-white">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                 <use xlink:href="#impressum"/>
                             </svg>
@@ -150,6 +149,56 @@
             </div>
         </div>
     </div>
+    <div id="personal_cards" class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="./images/cards.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Andy Felber</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./images/cards.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Eric Lehner</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./images/cards.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Demetrio Iaria</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="./images/cards.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sven Seiler</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
@@ -167,6 +216,7 @@
 </div>
 
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/smooth-scroll.min.js"></script>
 <script src="./js/lightbox.js"></script>
 <script src="./js/responsiveslides.min.js"></script>
 
@@ -197,6 +247,9 @@
             after: function(){}     // Function: After callback
         });
 
+    });
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 10
     });
 </script>
 
