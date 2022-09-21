@@ -36,6 +36,7 @@ body {
         height: 200px;
         perspective: 1000px;
     }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -101,17 +102,20 @@ body {
     }
 }
 
+.rslides_container {
+    margin-top: 2.5rem;
+}
 
 .rslides {
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .prev {
-    border-radius: 0 0 0 20px;
+    border-radius: 20px 0 0 20px;
 }
 
 .next {
-    border-radius: 0 0 20px 0;
+    border-radius: 0 20px 20px 0;
 }
 
 /* From uiverse.io by @adamgiebl */
@@ -262,3 +266,30 @@ body {
     bottom: 0;
 }
 
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+div > video {
+    border-radius: 10px;
+}

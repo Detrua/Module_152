@@ -11,6 +11,7 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Bergwerkkraft</title>
 
+    <noscript><strong>Your browser does not support JavaScript!</strong></noscript>
     <script src="./js/jquery.js"></script>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +53,7 @@
     </symbol>
 </svg>
 <header>
-    <div class="px-3 py-2 bg-dark text-white">
+    <div class="px-3 py-2 bg-dark text-white shadow" style="z-index: 0">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/"
@@ -89,7 +90,7 @@
         </div>
     </div>
 </header>
-<div class="container">
+<div class="container shadow-lg rounded mt-3 px-5">
     <div class="rslides_container">
         <ul id="slider3" class="rslides">
             <li><img src="images/picture.jpg" alt="">
@@ -148,9 +149,22 @@
         </div>
     </div>
 
-    <h1 class="text-center">Multimedia im Web</h1>
-    <p class="text-center">Multimedia gibt es in vielen verschiedenen Formaten. Es kann fast alles sein, was man hören oder sehen kann, wie Bilder, Musik, Ton, Videos, Schallplatten, Filme, Animationen und mehr.</p>
-    <p class="text-center">Webseiten enthalten oft Multimedia-Elemente verschiedener Arten und Formate.</p>
+
+    <div class="pt-5 text-center mb-5">
+        <h1 class="display-4 fw-bold">Multimedia im Web</h1>
+        <div class="col-lg-12 mx-auto">
+            <p class="lead mb-4">Multimedia gibt es in vielen verschiedenen Formaten. Es kann fast alles sein, was man hören oder sehen kann, wie Bilder, Musik, Ton, Videos, Schallplatten, Filme, Animationen und mehr. Webseiten enthalten oft Multimedia-Elemente verschiedener Arten und Formate.</p>
+        </div>
+        <div class="overflow-hidden">
+                <div class="ratio ratio-16x9">
+                    <video autoplay controls width="auto" height="auto" preload="metadata">
+                        <source src="./video/final.mp4" type="video/mp4">
+                        <strong>Your browser does not support the video tag</strong>.
+                    </video>
+                </div>
+        </div>
+    </div>
+
 
 <!--    Personal cards-->
     <div id="personal_cards" class="container">
@@ -161,7 +175,7 @@
                     <div class="card flip-card-inner">
                         <div class="flip-card-front">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Eric Lehner</h5>
+                                <h5 class="card-title fw-bold">Andy Felber</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
@@ -193,12 +207,12 @@
                     <div class="card flip-card-inner">
                         <div class="flip-card-front">
                             <div class="card-body">
-                                <h5 class="card-title fw-bold">Eric Lehner</h5>
+                                <h5 class="card-title fw-bold">Sven Seiler</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <img src="images/cards.jpg" alt="">
+                            <img src="images/personal/sven.png" alt="">
                         </div>
                     </div>
                 </div>
