@@ -11,9 +11,10 @@
     <meta name="generator" content="Hugo 0.84.0">
     <title>Bergwerkkraft</title>
 
-    <noscript><strong>Your browser does not support JavaScript!</strong></noscript>
+<!--    jquery load -->
     <script src="./js/jquery.js"></script>
 
+<!--    stylesheet injection-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/lightbox.css" rel="stylesheet">
     <link href="css/headers.css" rel="stylesheet">
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+<!--svg pre load-->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="bergwerkkraft" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001 6.971 2.789Zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z"/>
@@ -30,10 +32,11 @@
     <symbol id="home" viewBox="0 0 16 16">
         <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
     </symbol>
-    <symbol id="installation" viewBox="0 0 16 16">
-        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+    <symbol id="instructional_video" viewBox="0 0 16 16">
+        <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
     </symbol>
-    <symbol id="impressum" viewBox="0 0 16 16">
+    <symbol id="firma" viewBox="0 0 16 16">
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
             <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
@@ -62,7 +65,7 @@
                 </a>
                 <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
                     <li>
-                        <a href="#personal_cards" class="nav-link text-secondary">
+                        <a href="#" class="nav-link text-secondary">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
                                 <use xlink:href="#home"/>
                             </svg>
@@ -70,19 +73,19 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#personal_cards" class="nav-link text-white">
+                        <a href="#instructional_video_scroll" class="nav-link text-white">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                <use xlink:href="#installation"/>
+                                <use xlink:href="#instructional_video"/>
                             </svg>
-                            Dashboard
+                            Lehrvideo
                         </a>
                     </li>
                     <li>
-                        <a data-scroll href="#personal_cards" class="nav-link text-white">
+                        <a data-scroll href="#personal_cards_scroll" class="nav-link text-white">
                             <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                <use xlink:href="#impressum"/>
+                                <use xlink:href="#firma"/>
                             </svg>
-                            Orders
+                            Firma
                         </a>
                     </li>
                 </ul>
@@ -156,8 +159,8 @@
             <p class="lead mb-4">Multimedia gibt es in vielen verschiedenen Formaten. Es kann fast alles sein, was man hören oder sehen kann, wie Bilder, Musik, Ton, Videos, Schallplatten, Filme, Animationen und mehr. Webseiten enthalten oft Multimedia-Elemente verschiedener Arten und Formate.</p>
         </div>
         <div class="overflow-hidden">
-                <div class="ratio ratio-16x9">
-                    <video autoplay controls width="auto" height="auto" preload="metadata">
+                <div id="instructional_video_scroll" class="ratio ratio-16x9">
+                    <video controls preload="metadata">
                         <source src="./video/final.mp4" type="video/mp4">
                         <strong>Your browser does not support the video tag</strong>.
                     </video>
@@ -167,7 +170,7 @@
 
 
 <!--    Personal cards-->
-    <div id="personal_cards" class="container">
+    <div id="personal_cards_scroll" class="container">
         <div class="row">
 
             <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3 d-flex justify-content-center">
@@ -196,7 +199,7 @@
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <img src="images/cards.jpg" alt="">
+                            <img src="images/personal/eric.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -237,16 +240,16 @@
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
                 <svg class="bi" width="30" height="24"><use xlink:href="#bergwerkkraft"/></svg>
             </a>
-            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Bergwerkkraft, Inc</span>
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
         </ul>
     </footer>
 </div>
@@ -255,6 +258,7 @@
 <script src="./js/smooth-scroll.min.js"></script>
 <script src="./js/lightbox.js"></script>
 <script src="./js/responsiveslides.min.js"></script>
+<noscript><strong>Your browser does not support JavaScript!</strong></noscript>
 
 <script>
     lightbox.option({
@@ -286,6 +290,10 @@
     });
     var scroll = new SmoothScroll('a[href*="#"]', {
         speed: 300,
+        offset: function () {
+                return 50;
+        },
+
     });
 </script>
 
